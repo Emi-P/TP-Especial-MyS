@@ -34,12 +34,12 @@ Se realizaron 1000 simulaciones independientes de $T = 24$ horas cada
 una. Para cada simulación se calculó la media muestral del tiempo de
 permanencia
 
-$$\bar X_i = \frac{1}{n_i} \sum_{j=1}^{n_i} (D_j - A_{1,j}).$$
+$$\bar X_i = \frac{1}{n} \sum_{j=1}^{n} (D_j - A1_{j}).$$
 
-Sobre el conjunto de 1000 medias muestrales se construyeron intervalos
+Sobre el conjunto de n=1000 medias muestrales se construyeron intervalos
 de confianza asintóticos usando el Teorema Central del Límite:
 
-$$IC_{1-\alpha} = \bar X \pm z_{\alpha/2} \frac{S}{\sqrt{N}}$$
+$$IC_{1-\alpha} = \bar X \pm z_{\alpha/2} \frac{S(n)}{\sqrt{N}}$$
 
   | Nivel de confianza | $z_{\alpha/2}$ | IC (horas) |
 | :--- | :--- | :--- |
@@ -58,8 +58,7 @@ histograma de sus tiempos de permanencia.
 derecha. - Moda próxima a cero. - Media alrededor de 1.2 horas. -
 Presencia de valores extremos (cola larga).
 
-![Histograma de tiempos de permanencia con ajustes Exponencial y
-Lognormal](figs/histograma_simple_ej1c.png)
+![Histograma de los datos](figs/histograma_simple_ej1c.png)
 
 **Distribuciones propuestas:**
 
@@ -102,7 +101,7 @@ razones:
   permite una evaluación complementaria que, en este caso, muestra un
   seguimiento visual aceptable de la Lognormal en la cola y de la
   Exponencial en la zona del modo.
-  ![Histograma de tiempos de permanencia con ajustes Exponencial y
+![Histograma de tiempos de permanencia con ajustes Exponencial y
 Lognormal](figs/histograma_ej1c.png)
 
 - Concluimos que el test $\chi^2$ no es util para este experimento, pues el tiempo de permanencia se corresponde con una distribución continua y no discreta. Por otra parte
@@ -120,8 +119,7 @@ determina si es prioritario. La Recepción sigue siendo FIFO para todos,
 pero en Validación se separan en dos colas: prioritaria y normal. Al
 terminar un servicio en Validación se atiende siempre al primer cliente
 de la cola prioritaria si está ocupada; solo cuando está vacía se
-atiende a la cola normal. Los servicios no son interrumpibles
-(non-preemptive).
+atiende a la cola normal. Los servicios no son interrumpibles.
 
 Como en la segunda etapa el orden de salida ya no coincide con el de
 llegada, cada cliente recibe un **identificador numérico** al ingresar,
