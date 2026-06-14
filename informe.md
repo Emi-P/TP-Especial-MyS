@@ -80,8 +80,8 @@ resultados fueron:
 
   | Distribución | $\chi^2$ | g.d.l. | p-valor |
 | :--- | :--- | :--- | :--- |
-| Exponencial | $\approx$ 2817 | 8 | $\approx 0$ |
-| Lognormal | $\approx$ 3972 | 4 | $\approx 0$ |
+| Exponencial | $\approx$ 314.72 | 8 | $\approx 0$ |
+| Lognormal | $\approx$ 858.5331 | 7 | $\approx 0$ |
 
 Con $n = 10\,000$ observaciones, el test $\chi^2$ tiene una penalización muy
 alta y rechaza ambas distribuciones. Ninguna provee un ajuste adecuado
@@ -163,7 +163,7 @@ probabilidad considerable de esperar más de 1 hora (\~60 %) y más de 2
 horas (\~20--40 %).
 
 **Nota sobre los valores observados** 
- Los valores observados varian muchisimo entre distintas simulaciones. Esto probablemente se deba que se pide realizar estas medidas con solo 10000 datos. Para presentar estos en el informe usamos el promedio de valores observados en distintas simulaciones.
+ Los valores observados varian muchisimo entre distintas simulaciones. Esto probablemente se deba que se pide realizar estas medidas con solo 10000 datos.
 
 **$P(T > x minutos)$**
 Consideramos solo dos casos representativos. La probabilidad de estar mas de 60 minutos (1 hora) en el sistema y mas de 120 minutos (2 horas). Como se puede apreciar, salvo el caso de que el cliente *prioritario* siendo nula la probabilidad de esperar mas de 2 horas; el resto de valores varian enormemente. Esta gran variación probablemente no tiene una causa aparente pero claramente esta relacionada a la probabilidad de que un cliente normal este por detras de uno prioritario. Dependiendo esto de dos factores, el hecho de que este sea prioritario y que no haya llegado demasiado tarde.
