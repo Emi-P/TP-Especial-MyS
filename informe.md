@@ -187,12 +187,11 @@ Al introducir prioridades en Validación:
 **Impacto de la política de prioridades:**
 
 La política beneficia a una minoría (20 % del total) a costa de
-perjudicar a la mayoría (80 %). El tiempo promedio global (ponderado)
+perjudicar a la mayoría (80 %). El tiempo promedio global
 resulta similar al del Ejercicio 1, pero la distribución se vuelve
 marcadamente bimodal: los prioritarios experimentan una mejora
 sustancial mientras que los normales sufren demoras adicionales. Este
-comportamiento es esperable: la prioridad sin interrupción
-(non-preemptive) en el cuello de botella (Validación, con mayor carga:
+comportamiento es esperable: la prioridad sin interrupción en el cuello de botella (Validación, con mayor carga:
 $\rho \approx 0.8$) genera este efecto de "salto de cola" que penaliza a
 los clientes regulares.
 
@@ -214,8 +213,8 @@ Las principales conclusiones son:
     gracias al gran número de réplicas.
 2.  La distribución del tiempo de permanencia no se ajusta
     satisfactoriamente a una Exponencial ni a una Lognormal según el
-    test $\chi^2$, aunque visualmente ambas son compatibles con el
-    histograma.
+    test $\chi^2$, aunque visualmente ambas parecen compatibles con el
+    histograma y razonables como distribuciones para esta muestra.
 3.  La introducción de prioridades reduce el tiempo de permanencia de
     los clientes prioritarios (\~0.3 h) a costa de incrementar el de los
     normales (\~1.4 h), generando una distribución bimodal con mayor
