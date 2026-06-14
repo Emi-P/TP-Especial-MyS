@@ -164,10 +164,11 @@ distribución con cola mucho más larga (desvío \~1.3 h) y una
 probabilidad considerable de esperar más de 1 hora (\~60 %) y más de 2
 horas (\~20--40 %).
 
-**$P(T > x)$**
-
 **Nota sobre los valores observados** 
- Los valores observados varian muchisimo entre distintas simulaciones. Esto probablemente se deba que se pide realizar estas medidas con solo 10_000 datos. Para presentar estos valores usamos 
+ Los valores observados varian muchisimo entre distintas simulaciones. Esto probablemente se deba que se pide realizar estas medidas con solo 10000 datos. Para presentar estos en el informe usamos el promedio de valores observados en distintas simulaciones.
+
+**$P(T > x minutos)$**
+Consideramos solo dos casos representativos. La probabilidad de estar mas de 60 minutos (1 hora) en el sistema y mas de 120 minutos (2 horas). Como se puede apreciar, salvo el caso de que el cliente *prioritario* siendo nula la probabilidad de esperar mas de 2 horas; el resto de valores varian enormemente. Esta gran variación probablemente no tiene una causa aparente pero claramente esta relacionada a la probabilidad de que un cliente normal este por detras de uno prioritario. Dependiendo esto de dos factores, el hecho de que este sea prioritario y que no haya llegado demasiado tarde.
 
 ### 2.d --- Comparación con el Ejercicio 1
 
