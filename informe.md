@@ -41,10 +41,10 @@ de confianza asintóticos usando el Teorema Central del Límite:
 
 $$IC_{1-\alpha} = \bar X \pm z_{\alpha/2} \frac{S}{\sqrt{N}}$$
 
-  Nivel de confianza   $z_{\alpha/2}$   IC (horas)
-  -------------------- ---------------- ----------------
-  95 %                 1.96             \[1.14, 1.22\]
-  98 %                 2.33             \[1.10, 1.30\]
+  | Nivel de confianza | $z_{\alpha/2}$ | IC (horas) |
+| :--- | :--- | :--- |
+| 95 % | 1.96 | [1.15, 1.12] |
+| 98 % | 2.33 | [1.14, 1.23] |
 
 La estimación puntual del tiempo promedio de permanencia ronda las **1.2
 horas ($\approx$ 72 minutos)**.
@@ -59,7 +59,7 @@ derecha. - Moda próxima a cero. - Media alrededor de 1.2 horas. -
 Presencia de valores extremos (cola larga).
 
 ![Histograma de tiempos de permanencia con ajustes Exponencial y
-Lognormal](figs/histograma_ej1c.png)
+Lognormal](figs/histograma_simple_ej1c.png)
 
 **Distribuciones propuestas:**
 
@@ -69,6 +69,8 @@ Lognormal](figs/histograma_ej1c.png)
     asimetría y cola larga. Parámetros estimados por máxima
     verosimilitud: $\hat\mu = \overline{\log X}$,
     $\hat\sigma = S_{\log X}$.
+  
+Además, ambas distribuciones son asimétricas con una cola larga por derecha, similares al histograma visto anteriormente.
 
 **Prueba $\chi^2$:**
 
@@ -76,10 +78,16 @@ Se utilizaron $k = 10$ intervalos basados en **cuantiles teóricos** de
 cada distribución para asegurar frecuencias esperadas uniformes. Los
 resultados fueron:
 
+
   Distribución   $\chi^2$   g.l.   p-valor
   -------------- ---------- ------ -------------
-  Exponencial    $\approx$ 430      8      $\approx 0$
+  Exponencial    $\approx$ {2817}    8      $\approx 0$
   Lognormal      ---        7      $\approx 0$
+
+  | Distribución | $\chi^2$ | g.d.l. | p-valor |
+| :--- | :--- | :--- | :--- |
+| Exponencial | $\approx$ 2817 | 8 | $\approx 0$ |
+| Lognormal | $\approx$ 3972 | 4 | $\approx 0$ |
 
 Con $n = 10\,000$ observaciones, el test $\chi^2$ tiene una potencia muy
 alta y rechaza ambas distribuciones. Ninguna provee un ajuste adecuado
@@ -95,11 +103,7 @@ razones:
   tiempos de respuesta.
 - El histograma es compatible visualmente con ambas (cola larga, modo
   cercano a cero).
-- Con muestras grandes ($n \gg 1000$), los tests de bondad de ajuste
-  tienden a rechazar prácticamente cualquier distribución paramétrica,
-  ya que detectan diferencias mínimas que no necesariamente son
-  relevantes en la práctica.
-- El análisis gráfico (superposición de PDFs sobre el histograma)
+- El análisis gráfico (superposición de las funciones de densidad de probabilidad sobre el histograma)
   permite una evaluación complementaria que, en este caso, muestra un
   seguimiento visual aceptable de la Lognormal en la cola y de la
   Exponencial en la zona del modo.
