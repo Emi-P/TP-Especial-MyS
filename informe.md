@@ -164,8 +164,10 @@ distribución con cola mucho más larga (desvío \~1.3 h) y una
 probabilidad considerable de esperar más de 1 hora (\~60 %) y más de 2
 horas (\~20--40 %).
 
+**$P(T > x)$**
+
 **Nota sobre los valores observados** 
- Los valores de las probabilidades varian mucho con una muestra tan pequeña pero mostramos los valores promedio de entre los que fuimos observando.
+ Los valores observados varian muchisimo entre distintas simulaciones. Esto probablemente se deba que se pide realizar estas medidas con solo 10_000 datos. Para presentar estos valores usamos 
 
 ### 2.d --- Comparación con el Ejercicio 1
 
