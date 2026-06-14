@@ -84,7 +84,7 @@ resultados fueron:
 | Exponencial | $\approx$ 2817 | 8 | $\approx 0$ |
 | Lognormal | $\approx$ 3972 | 4 | $\approx 0$ |
 
-Con $n = 10\,000$ observaciones, el test $\chi^2$ tiene una potencia muy
+Con $n = 10\,000$ observaciones, el test $\chi^2$ tiene una penalización muy
 alta y rechaza ambas distribuciones. Ninguna provee un ajuste adecuado
 según el criterio del test.
 
@@ -104,7 +104,11 @@ razones:
   Exponencial en la zona del modo.
   ![Histograma de tiempos de permanencia con ajustes Exponencial y
 Lognormal](figs/histograma_ej1c.png)
-- Concluimos que el test $χ^2$ no es util para este experimento, pues el tiempo de permanencia se corresponde con una distribución continua y no discreta.
+
+- Concluimos que el test $\chi^2$ no es util para este experimento, pues el tiempo de permanencia se corresponde con una distribución continua y no discreta. Por otra parte
+intentamos muchas otras configuraciones, aumentando los datos, variando las formas
+de los intervalos (subintervalos por cuantiles), pero nada mejoró el ajuste ni
+nos permitió obtener un p-valor distinto 0 para ninguna de las distribuciones elegidas.  
 ------------------------------------------------------------------------
 
 ## Ejercicio 2 --- Centro de atención con clientes prioritarios
