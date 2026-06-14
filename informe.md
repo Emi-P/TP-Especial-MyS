@@ -43,7 +43,7 @@ $$IC_{1-\alpha} = \bar X \pm z_{\alpha/2} \frac{S}{\sqrt{N}}$$
 
   | Nivel de confianza | $z_{\alpha/2}$ | IC (horas) |
 | :--- | :--- | :--- |
-| 95 % | 1.96 | [1.15, 1.12] |
+| 95 % | 1.96 | [1.15, 1.22] |
 | 98 % | 2.33 | [1.14, 1.23] |
 
 La estimación puntual del tiempo promedio de permanencia ronda las **1.2
@@ -132,8 +132,8 @@ permitiendo aparear correctamente sus tiempos de llegada y salida.
 Se realizaron 500 simulaciones de $T = 24$ horas cada una. Los
 resultados:
 
-  Tipo de cliente   Media (hs)   IC 95 %
-  ----------------- ------------ ----------------
+  Tipo de cliente   Media (hs)         IC 95 %
+  ----------------- ---------------- -------------------
   Prioritarios      $\approx$ 0.32       \[0.31, 0.33\]
   Normales          $\approx$ 1.41       \[1.35, 1.48\]
 
@@ -145,8 +145,8 @@ suficientes observaciones de ambos tipos.
 ![Histogramas de tiempos de permanencia por tipo de
 cliente](figs/histogramas_ej2c.png)
 
-  Estadística          Prioritarios   Normales
-  -------------------- -------------- ------------
+  Estadística          Prioritarios       Normales
+  -------------------- ----------------- ------------
   Media                $\approx$ 0.3 hs       $\approx$ 1.4 hs
   Mediana              $\approx$ 0.2 hs       $\approx$ 1.1 hs
   Desvío estándar      $\approx$ 0.2 hs       $\approx$ 1.3 hs
