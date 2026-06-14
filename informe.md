@@ -145,8 +145,8 @@ suficientes observaciones de ambos tipos.
 ![Histogramas de tiempos de permanencia por tipo de
 cliente](figs/histogramas_ej2c.png)
 
-  Estadística          Prioritarios       Normales
-  -------------------- ----------------- ------------
+  Estadística          Prioritarios         Normales
+  -------------------- -----------------  ------------
   Media                $\approx$ 0.3 hs       $\approx$ 1.4 hs
   Mediana              $\approx$ 0.2 hs       $\approx$ 1.1 hs
   Desvío estándar      $\approx$ 0.2 hs       $\approx$ 1.3 hs
@@ -163,6 +163,9 @@ superar 1 hora. Los clientes normales, en cambio, presentan una
 distribución con cola mucho más larga (desvío \~1.3 h) y una
 probabilidad considerable de esperar más de 1 hora (\~60 %) y más de 2
 horas (\~20--40 %).
+
+** Nota sobre los valores observados ** 
+ Los valores de las probabilidades varian mucho con una muestra tan pequeña pero mostramos los valores promedio de entre los que fuimos observando.
 
 ### 2.d --- Comparación con el Ejercicio 1
 
