@@ -79,11 +79,6 @@ cada distribución para asegurar frecuencias esperadas uniformes. Los
 resultados fueron:
 
 
-  Distribución   $\chi^2$   g.l.   p-valor
-  -------------- ---------- ------ -------------
-  Exponencial    $\approx$ {2817}    8      $\approx 0$
-  Lognormal      ---        7      $\approx 0$
-
   | Distribución | $\chi^2$ | g.d.l. | p-valor |
 | :--- | :--- | :--- | :--- |
 | Exponencial | $\approx$ 2817 | 8 | $\approx 0$ |
@@ -107,7 +102,9 @@ razones:
   permite una evaluación complementaria que, en este caso, muestra un
   seguimiento visual aceptable de la Lognormal en la cola y de la
   Exponencial en la zona del modo.
-
+  ![Histograma de tiempos de permanencia con ajustes Exponencial y
+Lognormal](figs/histograma_ej1c.png)
+- Concluimos que el test $χ^2$ no es util para este experimento, pues el tiempo de permanencia se corresponde con una distribución continua y no discreta.
 ------------------------------------------------------------------------
 
 ## Ejercicio 2 --- Centro de atención con clientes prioritarios
